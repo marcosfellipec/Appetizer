@@ -7,19 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		599929372B4CF20400844299 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599929362B4CF20400844299 /* RemoteImage.swift */; };
 		599CA3752B3F86C80044E248 /* AppetizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599CA3742B3F86C80044E248 /* AppetizerApp.swift */; };
-		599CA3772B3F86C80044E248 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599CA3762B3F86C80044E248 /* ContentView.swift */; };
+		599CA3772B3F86C80044E248 /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599CA3762B3F86C80044E248 /* HomeTabView.swift */; };
 		599CA3792B3F86CB0044E248 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 599CA3782B3F86CB0044E248 /* Assets.xcassets */; };
 		599CA37D2B3F86CB0044E248 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 599CA37C2B3F86CB0044E248 /* Preview Assets.xcassets */; };
+		599CA3842B3F8CCF0044E248 /* AppetizerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599CA3832B3F8CCF0044E248 /* AppetizerListView.swift */; };
+		599CA3862B3F8CD10044E248 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599CA3852B3F8CD10044E248 /* AccountView.swift */; };
+		59BBD6082B4CACA7006572F7 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BBD6072B4CACA7006572F7 /* OrderView.swift */; };
+		59BBD60F2B4CAE27006572F7 /* Appetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BBD60E2B4CAE27006572F7 /* Appetizer.swift */; };
+		59BBD6112B4CAE8B006572F7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BBD6102B4CAE8B006572F7 /* NetworkManager.swift */; };
+		59BBD6132B4CB481006572F7 /* AppetizerListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BBD6122B4CB481006572F7 /* AppetizerListCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		599929362B4CF20400844299 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		599CA3712B3F86C80044E248 /* Appetizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		599CA3742B3F86C80044E248 /* AppetizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerApp.swift; sourceTree = "<group>"; };
-		599CA3762B3F86C80044E248 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		599CA3762B3F86C80044E248 /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
 		599CA3782B3F86CB0044E248 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		599CA37A2B3F86CB0044E248 /* Appetizer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Appetizer.entitlements; sourceTree = "<group>"; };
 		599CA37C2B3F86CB0044E248 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		599CA3832B3F8CCF0044E248 /* AppetizerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListView.swift; sourceTree = "<group>"; };
+		599CA3852B3F8CD10044E248 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		59BBD6072B4CACA7006572F7 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		59BBD60E2B4CAE27006572F7 /* Appetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer.swift; sourceTree = "<group>"; };
+		59BBD6102B4CAE8B006572F7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		59BBD6122B4CB481006572F7 /* AppetizerListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +66,14 @@
 		599CA3732B3F86C80044E248 /* Appetizer */ = {
 			isa = PBXGroup;
 			children = (
+				59BBD6142B4CE9A4006572F7 /* Components */,
+				59BBD60D2B4CAE06006572F7 /* Network */,
+				59BBD60C2B4CAE00006572F7 /* Model */,
 				599CA3742B3F86C80044E248 /* AppetizerApp.swift */,
-				599CA3762B3F86C80044E248 /* ContentView.swift */,
+				599CA3762B3F86C80044E248 /* HomeTabView.swift */,
+				59BBD60B2B4CADE6006572F7 /* Account */,
+				59BBD60A2B4CACCF006572F7 /* AppetizerList */,
+				59BBD6092B4CACC5006572F7 /* Order */,
 				599CA3782B3F86CB0044E248 /* Assets.xcassets */,
 				599CA37A2B3F86CB0044E248 /* Appetizer.entitlements */,
 				599CA37B2B3F86CB0044E248 /* Preview Content */,
@@ -67,6 +87,63 @@
 				599CA37C2B3F86CB0044E248 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		59BBD6092B4CACC5006572F7 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				59BBD6072B4CACA7006572F7 /* OrderView.swift */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		59BBD60A2B4CACCF006572F7 /* AppetizerList */ = {
+			isa = PBXGroup;
+			children = (
+				599CA3832B3F8CCF0044E248 /* AppetizerListView.swift */,
+				59BBD6122B4CB481006572F7 /* AppetizerListCellView.swift */,
+			);
+			path = AppetizerList;
+			sourceTree = "<group>";
+		};
+		59BBD60B2B4CADE6006572F7 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				599CA3852B3F8CD10044E248 /* AccountView.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		59BBD60C2B4CAE00006572F7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				59BBD60E2B4CAE27006572F7 /* Appetizer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		59BBD60D2B4CAE06006572F7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				59BBD6102B4CAE8B006572F7 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		59BBD6142B4CE9A4006572F7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				59BBD6152B4CE9AF006572F7 /* Image */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		59BBD6152B4CE9AF006572F7 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				599929362B4CF20400844299 /* RemoteImage.swift */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +216,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				599CA3772B3F86C80044E248 /* ContentView.swift in Sources */,
+				599929372B4CF20400844299 /* RemoteImage.swift in Sources */,
+				59BBD60F2B4CAE27006572F7 /* Appetizer.swift in Sources */,
+				599CA3772B3F86C80044E248 /* HomeTabView.swift in Sources */,
+				599CA3842B3F8CCF0044E248 /* AppetizerListView.swift in Sources */,
+				59BBD6132B4CB481006572F7 /* AppetizerListCellView.swift in Sources */,
+				59BBD6112B4CAE8B006572F7 /* NetworkManager.swift in Sources */,
+				599CA3862B3F8CD10044E248 /* AccountView.swift in Sources */,
 				599CA3752B3F86C80044E248 /* AppetizerApp.swift in Sources */,
+				59BBD6082B4CACA7006572F7 /* OrderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,7 +283,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -254,7 +340,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
