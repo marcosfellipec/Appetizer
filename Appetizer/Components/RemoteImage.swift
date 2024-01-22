@@ -24,18 +24,24 @@ final private class ImageLoader: ObservableObject {
             return
         }
 
-        guard let url = URL(string: urlString) else { return }
+        guard let url = URL(string: urlString) else {
+            isLoading = false
+            return
+        }
 
         do {
             let (data, _) = try await URLSession.shared.data(from: url)
-            guard let image = UIImage(data: data) else { return }
+            guard let image = UIImage(data: data) else {
+                isLoading = false
+                return
+            }
 
             cache.setObject(image, forKey: cacheKey)
             self.image = Image(uiImage: image)
-            self.isLoading = false
+            isLoading = false
         }
         catch {
-            self.isLoading = false
+            isLoading = false
             print(error.localizedDescription)
         }
     }
